@@ -20,15 +20,15 @@ Stand in the validator folder and type `mvn clean test`.
 ```
 This results in the following output, logged to the console:
 ```
-Total Passes: 4
+Total Passes: 5
 DATA: 19940410-5059 STATUS: PASSED by IsSocialSecurityNumber checker
 DATA: 19961021-0164 STATUS: PASSED by IsSocialSecurityNumber checker
 DATA: 19940410-5059 STATUS: PASSED by NotNull checker
 DATA: 19961021-0164 STATUS: PASSED by NotNull checker
+DATA: 19940410-5058 STATUS: PASSED by NotNull checker
 
 
-Total Fails: 0
-No checkers failed.
-------------------------------------------------------------------------
+Total Fails: 1
+DATA: 19940410-5058 STATUS: FAILED by IsSocialSecurityNumber checker
 ```
  
