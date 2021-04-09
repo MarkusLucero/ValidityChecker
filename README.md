@@ -8,7 +8,7 @@ Stand in the validator folder and type `mvn clean test`.
 # Usage
 1. Create a `ValidityChecker`, adding any `ValidityChecks` to be used as parameters.
 2. Create an `ArrayList` of data you want valited using the validators.
-3. Run `ValidityChecker.validate()`. 
+3. Run `ValidityChecker.validate(data)`. 
 
 # Example
 ```
