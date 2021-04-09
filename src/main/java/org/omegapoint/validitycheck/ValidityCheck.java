@@ -20,5 +20,5 @@ public interface ValidityCheck  {
      * 
      * @return the name of the checker as a string
      */
-    public String getName();
+    String getName();
 }

@@ -1,7 +1,7 @@
-package org.omegapoint.App;
-
+package org.omegapoint.app;
+import org.omegapoint.*;
 /**
- * Hello world!
+ * This is the driver. You can use it to freely test the ValidityCheck.
  */
 public final class App {
     private App() {
