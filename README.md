@@ -14,7 +14,7 @@ Stand in the validator folder and type `mvn clean test`.
 # Example
 ```
  ValidityChecker checker = new ValidityChecker(new IsSocialSecurityNumber(), new NotNull());
- ArrayList<String> data = new Arraylist(Arrays.asList("19940410-5059","19961021-0164"));
+ ArrayList<String> data = new Arraylist(Arrays.asList("19940410-5059","19961021-0164","19940410-5058"));
  checker.validate(data);
  
 ```
