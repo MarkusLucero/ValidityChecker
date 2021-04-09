@@ -34,8 +34,8 @@ class AppTest {
     }
     
 
-    /* Simple Unit tests for the public methods */
-
+    // Simple Unit tests for the public methods 
+ 
     @Test
     void testNullSSN() {
 
@@ -87,7 +87,7 @@ class AppTest {
 
 
 
-    /* Integration testing using ValidityChecker  */
+    // Integration testing using ValidityChecker  
     @Test
     void testValdityCheckerNullList(){
         ArrayList<String> null_list = null;
@@ -115,8 +115,12 @@ class AppTest {
     }
   
     @Test
-    void testValidityCheckerWithNotNullAndIsSsn(){
+    void testValidityCheckerWithStringSsnAndNotNull(){
         assertEquals(true, checker3.validate(new ArrayList<String>(Arrays.asList("19940410-5059","19961021-0164"))));
+    }  
+    @Test
+    void testValidityCheckerWithIntegerSsnAndNotNull(){
+        assertEquals(false, checker3.validate(new ArrayList<Integer>(Arrays.asList(19940410-5058,19961021-0164))));
     } 
  
 }

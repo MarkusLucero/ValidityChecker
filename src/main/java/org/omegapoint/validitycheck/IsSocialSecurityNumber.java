@@ -18,7 +18,7 @@ public class IsSocialSecurityNumber implements ValidityCheck {
      */
     @Override
     public <T> boolean check(T data){
-
+        
         if(data == null) {
             return false;
         }
@@ -29,8 +29,10 @@ public class IsSocialSecurityNumber implements ValidityCheck {
             if(!checkControlNumber((String) data)){
                 return false;
             }
+            return true;
         }
-        return true;
+        
+        return false;
     }
 
     /**
